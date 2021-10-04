@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do Js</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="first">
+        <div id="top" class="top">
+            <span style="font-weight: bolder; font-size: 70px; margin-right: 0px;">Task </span>
+            <span style="color: gray; font-size:70px; font-weight: lighter;">Lists</span>
+        </div>
+        
+        <div class="plus">
+            <span class="media2">
+            <a id="popup"><i class="fa fa-plus-circle" style="color: orangered; font-size: 50px;"></i></a></span>
+            <div class="media1" style="display: inline-block; font-size: 40px; color: gray;"><a onclick="enableModal()">&nbsp&nbspAdd Lists </a></div>
+        </div>
+    </div>
+    <div class="sentence">No items in the list. Click + to Add.</div>
+    
+    <div class="flexbox" id="flexbox"></div>
+    
+    <div class="modal" id="modal">
+        <div class="modal_content" id="modal_content">
+            <label for="newlist" class="label1">Add New List</label>
+            <br>
+            <input type="text" class="input1" id="input1" name="input1">
+            <br>
+            <span><button class="button1" id="button1">Add</button></span>
+            <span><button class="button1" id="button2">Close</button></span>
+        </div>
+
+       
+
+    </div>
+
+    <div class="modal" id="modal1">
+        <div class="modal_content" id="modal_content1">
+            <label for="newlist1" class="label1">Add New Item</label>
+            <br>
+            <input type="text" class="input1" id="input2">
+            <br>
+            <button class="button1" id="addItem">Add</button>
+            <span><button class="button1" id="button2" onclick="disableAdditem()">Close</button></span>
+        </div>
+
+    </div>
+
+    
+    
+        <div class="container" id="container">
+        
+        <h1 id="dynamicHeading" class="dynamicHeading">aa</h1>
+    <center>
+        <span class="media">
+            <a onclick="homePage()"><i class="fa fa-arrow-circle-left" style="font-size:36px; color: orangered;"></i></a>
+        </span>
+        
+        <div class="back" style="display: inline-block; font-size: 30px; color: gray;"><a onclick="homePage()">&nbsp&nbspBack </a></div>
+    </center>
+     
+    </div>
+    <script src="./script/index.js"></script>
+</body>
+</html>
